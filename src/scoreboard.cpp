@@ -2,7 +2,7 @@
 #include <iostream>
 
 using namespace std;
-
+//aparsons001 calculates total sum of scores
 int calculateTotal(const int scores[], int size) {
     if (scores == nullptr || size <= 0) {
         return 0;
@@ -16,7 +16,7 @@ int calculateTotal(const int scores[], int size) {
 
     return total;
 }
-
+// aparsons001 calculates average of scores
 double calculateAverage(const int scores[], int size) {
     if (scores == nullptr || size <= 0) {
         return 0.0;
@@ -27,7 +27,7 @@ double calculateAverage(const int scores[], int size) {
 
     return average;
 }
-
+// aparsons001 finds lowest score for sorting
 int findLowest(const int scores[], int size) {
     if (scores == nullptr || size <= 0) {
         return 0;
@@ -43,7 +43,7 @@ int findLowest(const int scores[], int size) {
 
     return lowest;
 }
-
+// finds highest score for sorting
 int findHighest(const int scores[], int size) {
     if (scores == nullptr || size <= 0) {
         return 0;
@@ -59,7 +59,7 @@ int findHighest(const int scores[], int size) {
 
     return highest;
 }
-
+// aparsons001 finds target score/ index defined by user
 int findScore(const int scores[], int size, int target) {
     if (scores == nullptr || size <= 0) {
         return -1;
@@ -73,7 +73,7 @@ int findScore(const int scores[], int size, int target) {
 
     return -1;
 }
-
+//aparsons001 sorts scores in ascending order using selection sort
 void sortScores(int scores[], int size) {
     if (scores == nullptr || size <= 0) {
         return;
@@ -93,7 +93,7 @@ void sortScores(int scores[], int size) {
         scores[lowestIndex] = temp;
     }
 }
-
+//aparsons001 prints scores in terminal
 void printScores(const int scores[], int size) {
     if (scores == nullptr || size <= 0) {
         cout << "No scores to print." << endl;
@@ -110,7 +110,7 @@ void printScores(const int scores[], int size) {
 
     cout << endl;
 }
-
+//aparsons validates if size is positive
 bool isValidSize(int size) {
     return size > 0;
 }
